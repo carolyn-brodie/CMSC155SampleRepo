@@ -10,6 +10,7 @@ public class ValidatingInput {
             System.out.print("Please enter a positive number: ");
             value = in.nextDouble();
         } while (value <= 0);
+
         System.out.println("Value is " + value);
 
     }

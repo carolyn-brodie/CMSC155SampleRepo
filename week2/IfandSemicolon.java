@@ -9,7 +9,8 @@ public class IfandSemicolon {
         // if you do not have {} after your if condition,
         // Java assumes that the statement inside if end's with
         // the first semicolon it finds.
-        if (number > 10);
+        if (number > 10) {
             System.out.println("Inside If???");
+        }
     }
 }
