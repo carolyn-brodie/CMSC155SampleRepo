@@ -5,11 +5,11 @@ public class Person {
     //Instance Variables
     private String name;
     private String address;
-    private int phone;
+    private String phone;
 
 
     //Constructor
-    public Person(String name, String address, int phone) {
+    public Person(String name, String address, String phone) {
         this.name = name;
         this.address = address;
         this.phone = phone;

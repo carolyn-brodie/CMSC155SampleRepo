@@ -4,13 +4,21 @@ public class HappyBirthday {
 
     public static String happy()
     {
+
         return "Happy birthday to you! ";
+    }
+
+
+    public static void singHappyBirthday(String name) {
+        String out = happy() + " Happy Birthday to " + name;
+        System.out.println(out);
     }
 
 
     public static void main(String[] args)
     {
-        String out = happy();
-        System.out.println(out);
+//        String out = happy();
+//        System.out.println(out);
+        singHappyBirthday("Suzy");
     }
 }

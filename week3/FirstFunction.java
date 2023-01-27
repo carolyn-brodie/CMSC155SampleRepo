@@ -6,11 +6,22 @@ public class FirstFunction {
         return result;
     }
 
+    public static boolean isEven(int number) {
+//        if (number % 2 == 0) {
+//            return true;
+//        } else {
+//            return false;
+//        }
+        return (number % 2 == 0);
+
+
+    }
+
     public static void main(String[] args) {
-        double sum = addNumbers(1,2,3);
-        System.out.println(sum);
+//        double sum = addNumbers(1,2,3.2);
+//        System.out.println(sum);
 
         //Another way to use this if you only want to see the result
-        //System.out.println(addNumbers(1,2,3));
+        System.out.println(addNumbers(1,2,3));
     }
 }
