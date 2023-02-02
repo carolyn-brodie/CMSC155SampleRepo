@@ -1,23 +1,23 @@
 package week4;
 
-public interface TryOverloading {
+public class TryOverloading {
 
-    public static int sameName(int x) {
-        System.out.println("One integer parameter");
-        return 0;
-    }
-
+//    public static int sameName(int x) {
+//        System.out.println("One integer parameter");
+//        return 0;
+//    }
+//
 //    public static int sameName(String x) {
 //        System.out.println("One String parameter");
 //        return 0;
-//    }
+ //   }
 
-//    public static int sameName(int x, int y) {
+//    public static int sameName(int x, String y) {
 //        System.out.println("Two integer parameters");
 //        return 0;
 //    }
-
-//    public static int sameName(int y, int x) {
+//
+//    public static int sameName(String y, int x) {
 //        System.out.println("Different variables names for two integer parameters")
 //        return 0;
 //    }
@@ -30,6 +30,10 @@ public interface TryOverloading {
 //    public static double sameName(int x) {
 //        System.out.println("One integer parameter");
 //        return 0.0;
+//    }
+
+//    public static void main(String[] args) {
+//        sameName("hi");
 //    }
 
 
