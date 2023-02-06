@@ -19,9 +19,6 @@ public class BankAccount {
         balance = 0;
         this.account = account;
         numberOfAccounts++;
-
-
-
     }
 
     public BankAccount(String owner, int account, double balance) {
