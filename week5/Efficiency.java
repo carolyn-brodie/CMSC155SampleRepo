@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Efficiency {
     public static void main(String[] args) {
-        int length = 10000000;   	// 10 million
+        int length = 100000000;   	// 100 million
         int[] array = new int[length];
 
         System.out.println("ArrayStart");
