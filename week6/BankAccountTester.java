@@ -10,6 +10,9 @@ public class BankAccountTester {
         suzyAccount.withdraw(10.10);
         System.out.println(suzyAccount);
 
+        BankAccount bankVar = new SavingsAccount("Bear ", .15);
+
+
 
     }
 }

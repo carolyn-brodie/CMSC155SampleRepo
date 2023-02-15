@@ -21,6 +21,6 @@ public abstract class Person {
     }
 
     public String toString() {
-        return name + " with phone " + phone + " and address" + address;
+        return name + " with phone " + phone + " and address " + address;
     }
 }
