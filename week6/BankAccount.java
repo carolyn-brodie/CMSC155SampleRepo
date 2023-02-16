@@ -10,6 +10,9 @@ public class BankAccount {
 
     //constructor
     public BankAccount(String owner, int acct) {
+//        this.owner = owner;
+//        this.accountNum = acct;
+//        this.balance = 0;
 
         this(owner,acct,0);
     }
@@ -21,7 +24,12 @@ public class BankAccount {
     }
 
     public BankAccount(String owner) {
+
         this(owner, nextNum++,0);
+    }
+
+    public void printit() {
+        System.out.println("Bank Account");
     }
 
 
@@ -59,6 +67,10 @@ public class BankAccount {
 //                balance == otherAcct.balance;
 //    }
 
+    public double returnBalance() {
+        return balance;
+    }
+
     @Override
     public boolean equals(Object obj) {
         if (obj instanceof BankAccount) {
@@ -74,6 +86,7 @@ public class BankAccount {
     }
 
     //print methods
+    @Override
     public String toString() {
         String out = owner + " with account " + accountNum;
         out += " has balance " + balance;
