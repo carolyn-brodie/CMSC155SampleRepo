@@ -24,13 +24,28 @@ public class BankAccount implements Comparable<BankAccount> {
         this(owner, nextNum++,0);
     }
 
+//    public int compareTo(BankAccount other) {
+//        if (this.accountNum < other.accountNum) {
+//            return -1;
+//        } else if (this.accountNum > other.accountNum) {
+//            return 1;
+//        } else {
+//            return 0;
+//        }
+//    }
+
     public int compareTo(BankAccount other) {
-        if (this.accountNum < other.accountNum) {
-            return -1;
-        } else if (this.accountNum > other.accountNum) {
-            return 1;
+        if (this.owner.compareTo(other.owner) == 0) {
+            //owner same so look at account number
+            if (this.accountNum == other.accountNum) {
+                return (int) (this.balance - other.balance);
+
+            } else if (this.accountNum < other.accountNum) {
+                return -1;
+            } else return 1;
+
         } else {
-            return 0;
+            return this.owner.compareTo(other.owner);
         }
     }
 

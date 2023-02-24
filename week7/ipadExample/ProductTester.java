@@ -10,6 +10,9 @@ public class ProductTester {
 
         System.out.println(bigPro + "\n" + pro + "\n" +
                 iPad + "\n" );
+
+        Product2 bigPro2 = new Product2(new IPadPro129(256));
+        System.out.println(bigPro2);
     }
 
 }
