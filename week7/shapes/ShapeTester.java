@@ -49,8 +49,8 @@ public class ShapeTester {
         Shape[] arrayOfShapes =
                 {new Square(3), new Triangle(1,2), new Circle(4)};
         System.out.println(findBiggestShape(arrayOfShapes));
-        Shape x = new TryIt();
-        System.out.println(x.computeArea());
+
+
 
     }
 
