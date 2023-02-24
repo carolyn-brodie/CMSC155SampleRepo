@@ -2,7 +2,7 @@ package week7.measureExample;
 
  
 
-public class Book   {
+public class Book  implements Measure {
 	
 	//instance variables
 	private String title;
@@ -18,7 +18,9 @@ public class Book   {
 		this.price = price;
 	}
 
-
+	public double getMeasure() {
+		return price;
+	}
 
 	 
 

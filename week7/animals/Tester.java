@@ -13,7 +13,7 @@ public class Tester {
         Animal myPet = new Snake();
 
         //To Test
-        //myPet = canary;
+        myPet = canary;
         //myPet  = new Animal();
         //python = myPet;
         //python = canary;
@@ -21,8 +21,8 @@ public class Tester {
         //Snake.eats(canary);
         //python.eats(myPet);
         //myPet.eats(canary);
-        //python.eats(canary);
-        //python.eats(python);
+        python.eats(canary);
+        python.eats(python);
 
 
     }

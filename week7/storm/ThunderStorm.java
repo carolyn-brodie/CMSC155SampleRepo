@@ -1,9 +1,7 @@
 package week7.storm;
 
-public class ThunderStorm {
-    public final static double PREDICTED_DAMAGE_LEVEL_0 = 1000;
-    public final static double PREDICTED_DAMAGE_LEVEL_1 = 5000;
-    public final static int BAD_THUNDERSTORM_CUTOFF = 60;
+public class ThunderStorm implements StormType{
+
 
 	private int windSpeed;
 

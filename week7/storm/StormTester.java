@@ -18,10 +18,12 @@ public class StormTester {
         System.out.println(hurricane2 + "\n" + tornado2 + "\n" + thunderstorm2);
 
         //Test StormWarning Version 3
-//        StormWarningV3 hurricane3 = new StormWarningV3(new Hurricane(300));
-//
-//
-//        System.out.println(hurricane3 + "\n" );
+        StormWarningV3 hurricane3 = new StormWarningV3(new Hurricane(300));
+        StormWarningV3 tornado3 = new StormWarningV3(new Tornado(120));
+        StormWarningV3 thunderstorm3 = new StormWarningV3 (new ThunderStorm(60));
+
+
+        System.out.println(hurricane3 + "\n" + tornado3  + "\n" + thunderstorm3);
 
     }
 

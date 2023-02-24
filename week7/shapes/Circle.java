@@ -1,6 +1,6 @@
 package week7.shapes;
 
-public class Circle  {
+public class Circle implements Shape {
 
     //instance variables
     private double radius;
@@ -12,6 +12,7 @@ public class Circle  {
 
     //class specific methods
     public double computeArea() {
+
         return Math.PI * Math.pow(radius,2);
     }
 

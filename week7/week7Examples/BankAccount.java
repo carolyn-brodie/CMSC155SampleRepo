@@ -1,6 +1,6 @@
 package week7.week7Examples;
 
-public class BankAccount {
+public class BankAccount implements Comparable<BankAccount> {
 
     private static int nextNum = 100;
     //attributes
@@ -22,6 +22,16 @@ public class BankAccount {
 
     public BankAccount(String owner) {
         this(owner, nextNum++,0);
+    }
+
+    public int compareTo(BankAccount other) {
+        if (this.accountNum < other.accountNum) {
+            return -1;
+        } else if (this.accountNum > other.accountNum) {
+            return 1;
+        } else {
+            return 0;
+        }
     }
 
 

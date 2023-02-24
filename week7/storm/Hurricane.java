@@ -1,15 +1,13 @@
 package week7.storm;
 
-public class Hurricane {
+public class Hurricane implements StormType{
 
-    public final static double PREDICTED_DAMAGE_LEVEL_3 = 500000;
-    public final static double PREDICTED_DAMAGE_LEVEL_4 = 1000000;
-    public final static int BAD_HURRICANE_CUTOFF = 130;
+
 
 
     private int windSpeed;
 
-    public Hurricane(int speed) {
+    public Hurricane(int speed)  {
 
         windSpeed = speed;
     }

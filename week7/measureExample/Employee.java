@@ -1,6 +1,6 @@
 package week7.measureExample;
 
-public class Employee extends Person    {
+public class Employee extends Person implements Measure   {
 	
 	private String jobTitle;
 	private double salaryPerMonth;
@@ -12,7 +12,9 @@ public class Employee extends Person    {
 		
 	}
 
-
+	public double getMeasure() {
+		return salaryPerMonth;
+	}
 	 
 	
 	public void findJob() {

@@ -1,9 +1,7 @@
 package week7.storm;
 
-public class Tornado {
-    public final static double PREDICTED_DAMAGE_LEVEL_2 = 100000;
-    public final static double PREDICTED_DAMAGE_LEVEL_3 = 500000;
-    public final static int BAD_TORNADO_CUTOFF = 157;
+public class Tornado implements StormType{
+
 
 
     //instance variables
