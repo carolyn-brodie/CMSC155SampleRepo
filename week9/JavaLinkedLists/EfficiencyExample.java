@@ -30,7 +30,7 @@ public class EfficiencyExample {
         for (int i = 0; i < length; i++)
             alList.get((int)(length * Math.random()));
         System.out.println("ArrayListDoneAccessing");
-
-
-    }
+//
+//
+   }
 }

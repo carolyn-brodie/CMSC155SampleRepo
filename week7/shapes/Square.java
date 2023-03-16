@@ -1,6 +1,6 @@
 package week7.shapes;
 
-public class Square implements Shape {
+public class Square implements  Shape{
 
     //instance variables
     private double side;

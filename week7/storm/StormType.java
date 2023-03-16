@@ -10,6 +10,7 @@ public interface StormType {
     public final static int BAD_HURRICANE_CUTOFF = 130;
     public final static int BAD_TORNADO_CUTOFF = 157;
     public final static int BAD_THUNDERSTORM_CUTOFF = 60;
+    public final static int BAD_BLIZZARD_CUTOFF = 86;
 
     double predictDamageInDollars();
 }

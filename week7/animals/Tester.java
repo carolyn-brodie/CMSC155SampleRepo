@@ -14,13 +14,13 @@ public class Tester {
 
         //To Test
         myPet = canary;
-        //myPet  = new Animal();
-        //python = myPet;
-        //python = canary;
-        //canary.eats(python);
-        //Snake.eats(canary);
-        //python.eats(myPet);
-        //myPet.eats(canary);
+//        myPet  = new Animal();
+//        python = myPet;
+//        python = canary;
+//        canary.eats(python);
+//        Snake.eats(canary);
+        python.eats(myPet);
+//        myPet.eats(canary);
         python.eats(canary);
         python.eats(python);
 

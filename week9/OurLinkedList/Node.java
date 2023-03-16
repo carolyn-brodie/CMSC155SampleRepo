@@ -14,20 +14,24 @@ public class Node {
 
     //other methods
     public void setLink(Node newNode) {
+
         link = newNode;
     }
 
 
     public int getValue() {
+
         return value;
     }
     //return the node
     public Node getLink() {
+
         return link;
     }
 
     //toString
     public String toString() {
+
         return "" + value;
     }
 

@@ -12,6 +12,7 @@ public class SortingPrimitives {
         Arrays.sort(array);
         System.out.println(Arrays.toString(array));
 
+        System.out.println(lst);
         Collections.sort(lst);
          System.out.println(lst);
 

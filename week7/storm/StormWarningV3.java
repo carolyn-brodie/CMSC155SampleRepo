@@ -12,7 +12,8 @@ public class StormWarningV3 {
 
 	//other methods
 	public double predictDamageLevel() {
-			return theStorm.predictDamageInDollars();
+
+		return theStorm.predictDamageInDollars();
 	}
 
 	//toString

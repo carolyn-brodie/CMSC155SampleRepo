@@ -24,7 +24,9 @@ public class Triangle implements Shape  {
     }
 
     public static void main(String[] args) {
+
         System.out.println(QUARTER + 10);
+        System.out.println(Shape.addNumbers(2,3));
 
     }
 }

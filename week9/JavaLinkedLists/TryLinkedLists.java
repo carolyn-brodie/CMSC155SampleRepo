@@ -14,7 +14,7 @@ public class TryLinkedLists {
         lst.add(2.6);
         System.out.println(lst);
         System.out.println("Size of list is " + lst.size());
-
+//
         for (int count = 0; count < lst.size(); count++) {
             System.out.print(lst.get(count) + " ");
         }
@@ -23,6 +23,7 @@ public class TryLinkedLists {
             System.out.print(item + " ");
         }
         System.out.println();
+
         ListIterator<Double> iter = lst.listIterator();
         double total = 0;
         while (iter.hasNext()) {
