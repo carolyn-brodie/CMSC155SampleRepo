@@ -75,7 +75,24 @@ public class OurLinkedList {
 
     //Remove
     public void remove(int position) {
-
+        if (this.size() > 0) {
+            if (position >= this.size()) {
+                position = this.size() - 1;
+            }
+            if (position <= 0) {
+                firstNode = firstNode.getLink();
+            } else {
+                Node currentNode = firstNode;
+                int currentPosition = 0;
+                while (currentPosition < position - 1 &&
+                        currentNode.getLink() != null) {
+                    currentNode = currentNode.getLink();
+                    currentPosition++;
+                }
+                Node nodeToDelete = currentNode.getLink();
+                currentNode.setLink(nodeToDelete.getLink());
+            }
+        }
 
     }
 
