@@ -7,6 +7,7 @@ public class TryJavaStacks {
         Stack<String> temp = new Stack<>();
         temp.push("how");
         temp.push("are");
+        //System.out.println(temp);
         String x = temp.pop();
         temp.push("you");
         temp.push("now");
@@ -17,6 +18,7 @@ public class TryJavaStacks {
         System.out.println("y = " + y);
         System.out.println("z = " + z);
         System.out.println(temp);
+
 
     }
 }

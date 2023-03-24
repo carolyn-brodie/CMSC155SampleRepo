@@ -10,17 +10,18 @@ public class OurStackTester {
         temp.push("am");
         temp.push("not");
 
-        temp.pop(); 			// removes "not"
+        System.out.println(temp.pop()); 			// removes "not"
         temp.push("fine");
         String x = temp.peek();  	// should be "fine"
 
         temp.push("how");
         temp.push("are");
         temp.push("you");
-
+//
         String y = temp.pop(); 	// should be "you"
-
-        System.out.println("x = " + x + " y = " + y);
+//
+        System.out.println("x = " + x );
+        System.out.println("y = " + y);
         System.out.println(temp);  //should be ["I" "am" "fine" "how" "are"]
     }
 }

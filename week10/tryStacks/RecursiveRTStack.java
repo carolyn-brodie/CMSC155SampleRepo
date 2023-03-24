@@ -8,6 +8,7 @@ public class RecursiveRTStack {
     }
 
     public static void main(String[] args) {
+
         mystery(10.2);
     }
 
