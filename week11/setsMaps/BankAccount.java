@@ -49,7 +49,7 @@ public class BankAccount {
         int hash = 1;
         hash = hash * HASH_MULTIPLIER * owner.hashCode();
         hash = hash * HASH_MULTIPLIER * Integer.hashCode(accountNum);
-        hash = hash * HASH_MULTIPLIER * Double.hashCode(balance);
+
         return hash;
     }
 
