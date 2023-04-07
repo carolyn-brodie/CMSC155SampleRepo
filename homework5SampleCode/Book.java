@@ -14,6 +14,19 @@ public class Book {
         numberOfCopies = number;
     }
 
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof Book) {
+            Book other = (Book)obj;
+            return this.title.equals(other.title) &&
+                    this.author.equals(other.author) &&
+                    this.numberOfCopies == other.numberOfCopies;
+        } else {
+            return false;
+        }
+    }
+
     public void updateCopies (int additionalCopies) {
         numberOfCopies += additionalCopies;
     }
