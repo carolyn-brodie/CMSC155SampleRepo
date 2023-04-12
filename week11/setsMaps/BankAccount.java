@@ -56,15 +56,15 @@ public class BankAccount {
 
 
 
-    @Override
-    public boolean equals(Object obj) {
-        if (obj instanceof BankAccount) {
-            BankAccount otherAcct = (BankAccount) obj;
-            return owner.equals(otherAcct.owner) &&
-                    accountNum == otherAcct.accountNum &&
-                    balance == otherAcct.balance;
-        } else return false;
-    }
+//    @Override
+//    public boolean equals(Object obj) {
+//        if (obj instanceof BankAccount) {
+//            BankAccount otherAcct = (BankAccount) obj;
+//            return owner.equals(otherAcct.owner) &&
+//                    accountNum == otherAcct.accountNum;
+//
+//        } else return false;
+//    }
 
     public BankAccount copy() {
         return new BankAccount(owner, accountNum, balance);
