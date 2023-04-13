@@ -1,13 +1,13 @@
 package week12;
 
-public class GenericNode<T> {
+public class GenericNode<I> {
 
     //attributes
-    private int value;
+    private I value;
     private GenericNode link;
 
     //constructor
-    public GenericNode(int value) {
+    public GenericNode(I value) {
         this.value = value;
         link =null;
     }
@@ -19,7 +19,7 @@ public class GenericNode<T> {
     }
 
 
-    public int getValue() {
+    public I getValue() {
 
         return value;
     }

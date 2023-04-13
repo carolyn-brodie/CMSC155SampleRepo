@@ -1,27 +1,34 @@
 package week12;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 public class SortingInJava
 {
 	public static void main(String[] args) 
 	{
 	 	// Sorting array-lists.
 
-		final Integer[] mixedOrder = {3, -55, -7, 7, 0, -2, 54, 7}; 
+		final Integer[] mixedOrder = {3, -55, -7, 7, 0, -2, 54, 7};
+//		Arrays.sort(mixedOrder);
+//		System.out.println(Arrays.toString(mixedOrder));
 //
 //		// Increasing order is the default.
-//		List<Integer> increasingOrder = new ArrayList<>(Arrays.asList(mixedOrder));
-//		Collections.sort(increasingOrder);
-//		System.out.println(increasingOrder);
+		List<Integer> increasingOrder = new ArrayList<>(Arrays.asList(mixedOrder));
+		Collections.sort(increasingOrder);
+		System.out.println(increasingOrder);
 //
 //		// Obtain decreasing order using Collections.reverseOrder.
-//		List<Integer> decreasingOrder = new ArrayList<>(Arrays.asList(mixedOrder));
-//		Collections.sort(decreasingOrder, Collections.reverseOrder());
-//		System.out.println(decreasingOrder);
+		List<Integer> decreasingOrder = new ArrayList<>(Arrays.asList(mixedOrder));
+		Collections.sort(decreasingOrder, Collections.reverseOrder());
+		System.out.println(decreasingOrder);
 //
 //		// Even numbers before odd numbers.
-//		List<Integer> evensFirst = new ArrayList<>(Arrays.asList(mixedOrder));
-//		Collections.sort(evensFirst, (a,b) -> { if (a % 2 != 0 && b % 2 == 0) return 1; else return -1; });
-//		System.out.println(evensFirst);
+		List<Integer> evensFirst = new ArrayList<>(Arrays.asList(mixedOrder));
+		Collections.sort(evensFirst, (a,b) -> { if (a % 2 != 0 && b % 2 == 0) return 1; else return -1; });
+		System.out.println(evensFirst);
 //
 //		// Even numbers in INCREASING order, followed by odd numbers in DECREASING order.
 //		List<Integer> evensIncreasingOdddsDecreasing = new ArrayList<>(Arrays.asList(mixedOrder));
@@ -40,12 +47,12 @@ public class SortingInJava
 //
 //	 	// To sort objects of some other class, the class can implement the Comparable interface; i.e. have a compareTo method.
 //
-//	 	BankAccount tomAccount = new BankAccount("Tom");
-//	 	BankAccount samAccount = new BankAccount("Sam");
-//	 	BankAccount suzyAccount = new BankAccount("Suzy");
-//	 	BankAccount bobAccount = new BankAccount("Bob");
-//	 	BankAccount timAccount = new BankAccount("Tim");
-//	 	BankAccount boffinAccount = new BankAccount("Boffin");
+//	 	BankAccount tomAccount = new BankAccount("Tom", 10);
+//	 	BankAccount samAccount = new BankAccount("Sam",10);
+//	 	BankAccount suzyAccount = new BankAccount("Suzy",10);
+//	 	BankAccount bobAccount = new BankAccount("Bob",10);
+//	 	BankAccount timAccount = new BankAccount("Tim",10);
+//	 	BankAccount boffinAccount = new BankAccount("Boffin",10);
 //
 //	 	BankAccount[] accounts = {tomAccount,samAccount,suzyAccount,bobAccount,timAccount,boffinAccount};
 //

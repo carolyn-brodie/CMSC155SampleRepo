@@ -8,8 +8,8 @@ public class OurStack<T> {
     private T[] elements;
     private int size;
 
-    public OurStack(T[] emptyStack) {
-        elements = emptyStack;
+    public OurStack(T[] defaultValues) {
+        elements = defaultValues;
         size = 0;
     }
 

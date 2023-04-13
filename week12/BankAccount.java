@@ -8,10 +8,17 @@ class BankAccount implements Comparable<BankAccount>
 	   private double balance;
 	   private String owner;
 
-	   public BankAccount(String owner)
+	   public BankAccount(String owner, double balance)
 	   {
 		   this.owner = owner;
-		   this.balance = 0;
+		   this.balance = balance;
+	   }
+	   public String getOwner() {
+		   return owner;
+	   }
+
+	   public double getBalance() {
+		   return balance;
 	   }
 
 	   public void deposit(double amount)

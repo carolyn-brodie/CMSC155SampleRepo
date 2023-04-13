@@ -4,7 +4,7 @@ package week12;
  * Created by Owner on 4/17/2017.
  */
 
-public class NCBankAccount  {
+public class NCBankAccount implements Comparable<NCBankAccount>  {
 
     //instance variables
     private String owner;
@@ -28,9 +28,9 @@ public class NCBankAccount  {
             System.out.println ("Insufficient Funds");
     }
 
-//    public int compareTo(NCBankAccount other) {
-//        return owner.compareTo(other.owner);
-//    }
+    public int compareTo(NCBankAccount other) {
+        return owner.compareTo(other.owner);
+    }
 
     public String toString() {
         return owner + " has balance " + balance;

@@ -5,7 +5,7 @@ public class OurStackTester {
     public static void main(String[] args) {
 //        String[] starting = new String[10];
 //        OurStack<String> temp = new OurStack(starting);
-//
+////          OurStack temp = new OurStack();
 //        temp.push("I");
 //        temp.push("am");
 //        temp.push("not");
@@ -24,12 +24,12 @@ public class OurStackTester {
 //        System.out.println(temp);  //should be ["I" "am" "fine" "how" "are"]
 
         ////////////////////////////////
-//        Integer[] starting = new Integer[10];
-//        OurStack<Integer> temp = new OurStack(starting);
-//        temp.push(2);
-//        temp.push(3);
-//        System.out.println(temp);
-//        System.out.println(temp.peek());
+        Integer[] starting = new Integer[10];
+        OurStack<Integer> temp = new OurStack(starting);
+        temp.push(2);
+        temp.push(3);
+        System.out.println(temp);
+        System.out.println(temp.peek());
 
     }
 }
